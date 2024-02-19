@@ -1,0 +1,579 @@
+{
+	"id": "fb1c3c67-30e6-43a5-88d1-86479a3155f3",
+	"name": "sqlVerifyer",
+	"timestamp": "2024-02-19T09:56:10.955Z",
+	"collection_id": "24818302-86a50cfc-ceb7-4152-a4be-6183abc97afc",
+	"folder_id": 0,
+	"environment_id": "24818302-ba0c8705-21df-4945-b342-062984378b1c",
+	"totalPass": 22,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2024-02-19T09:56:04.448Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2b8e52ab-6d4e-4043-a450-72d173f7eebf",
+			"name": "Login - Valid admin",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/authenticate",
+			"time": 278,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Body contains token": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Body contains token": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				278
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Body contains token": true
+				}
+			]
+		},
+		{
+			"id": "9c16718e-9eb9-40be-a302-9bf72c75f992",
+			"name": "Smoke test",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 160,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "2922e044-327e-4f88-82f5-9ec12b52809c",
+			"name": "Empty title",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 162,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				162
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "bd1d4134-7d57-4bb4-9be2-77b1e61db822",
+			"name": "Empty title + body",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 157,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				157
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "c26914f5-9c2b-4864-a433-6a8f696ae524",
+			"name": "Empty body",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 163,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				163
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "a74695a5-b25b-4d88-9a0f-422a2315236f",
+			"name": "Empty body + answer",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 163,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				163
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "ef1c22ba-77fb-4022-ac1d-1e9f16a72898",
+			"name": "Empty answer",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 157,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				157
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "c7a0588b-0126-4161-a42e-b906d3334e79",
+			"name": "Empty answer + title",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 158,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				158
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "848fc651-e874-417c-8ce8-c37264a9c3d5",
+			"name": "All fields are empty",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 161,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				161
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "5ccaa958-6a7f-449e-a365-2d82dc4831b4",
+			"name": "Verify latin text",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 160,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				160
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "49fe02f3-159f-484e-918a-260c9849bf5a",
+			"name": "Verify cyrillic text",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 165,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				165
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "0c98cdc5-d545-4ef4-ac9b-1188835166fd",
+			"name": "Verify numeric values",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks",
+			"time": 171,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status code is 201": true
+			},
+			"testPassFailCounts": {
+				"Status code is 201": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				171
+			],
+			"allTests": [
+				{
+					"Status code is 201": true
+				}
+			]
+		},
+		{
+			"id": "eaae1b86-00e3-4b9c-80b1-a79b14d86db8",
+			"name": "Verify smoke test",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks/57394",
+			"time": 167,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Проверим содержимое поля text": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Проверим содержимое поля text": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				167
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Проверим содержимое поля text": true
+				}
+			]
+		},
+		{
+			"id": "131e33de-9f35-4239-87ad-0b439438d93d",
+			"name": "Verify full editing",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks/57394",
+			"time": 170,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"is EDITED?": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"is EDITED?": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				170
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"is EDITED?": true
+				}
+			]
+		},
+		{
+			"id": "ce46dbbd-a720-48e0-8f8e-f9e5216edf93",
+			"name": "Verify partly editing",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks/57394",
+			"time": 169,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Your test name": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				169
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Your test name": true
+				}
+			]
+		},
+		{
+			"id": "11ef1ad2-c5d5-4cf6-865d-133a622eda97",
+			"name": "Delete a task by ID",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks/57394",
+			"time": 159,
+			"responseCode": {
+				"code": 204,
+				"name": "No Content"
+			},
+			"tests": {
+				"Status code is 204": true
+			},
+			"testPassFailCounts": {
+				"Status code is 204": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				159
+			],
+			"allTests": [
+				{
+					"Status code is 204": true
+				}
+			]
+		},
+		{
+			"id": "29750308-c577-4ef9-abdd-c5875984ec73",
+			"name": "Delete verify",
+			"url": "https://sqlverifier-live-6e21ca0ed768.herokuapp.com/api/tasks/57394",
+			"time": 58,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"Verify that task is deleted": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Verify that task is deleted": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				58
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"Verify that task is deleted": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2778,
+	"collection": {
+		"requests": [
+			{
+				"id": "2b8e52ab-6d4e-4043-a450-72d173f7eebf",
+				"method": "POST"
+			},
+			{
+				"id": "9c16718e-9eb9-40be-a302-9bf72c75f992",
+				"method": "POST"
+			},
+			{
+				"id": "2922e044-327e-4f88-82f5-9ec12b52809c",
+				"method": "POST"
+			},
+			{
+				"id": "bd1d4134-7d57-4bb4-9be2-77b1e61db822",
+				"method": "POST"
+			},
+			{
+				"id": "c26914f5-9c2b-4864-a433-6a8f696ae524",
+				"method": "POST"
+			},
+			{
+				"id": "a74695a5-b25b-4d88-9a0f-422a2315236f",
+				"method": "POST"
+			},
+			{
+				"id": "ef1c22ba-77fb-4022-ac1d-1e9f16a72898",
+				"method": "POST"
+			},
+			{
+				"id": "c7a0588b-0126-4161-a42e-b906d3334e79",
+				"method": "POST"
+			},
+			{
+				"id": "848fc651-e874-417c-8ce8-c37264a9c3d5",
+				"method": "POST"
+			},
+			{
+				"id": "5ccaa958-6a7f-449e-a365-2d82dc4831b4",
+				"method": "POST"
+			},
+			{
+				"id": "49fe02f3-159f-484e-918a-260c9849bf5a",
+				"method": "POST"
+			},
+			{
+				"id": "0c98cdc5-d545-4ef4-ac9b-1188835166fd",
+				"method": "POST"
+			},
+			{
+				"id": "eaae1b86-00e3-4b9c-80b1-a79b14d86db8",
+				"method": "GET"
+			},
+			{
+				"id": "131e33de-9f35-4239-87ad-0b439438d93d",
+				"method": "PUT"
+			},
+			{
+				"id": "ce46dbbd-a720-48e0-8f8e-f9e5216edf93",
+				"method": "PATCH"
+			},
+			{
+				"id": "11ef1ad2-c5d5-4cf6-865d-133a622eda97",
+				"method": "DELETE"
+			},
+			{
+				"id": "29750308-c577-4ef9-abdd-c5875984ec73",
+				"method": "GET"
+			}
+		]
+	}
+}
