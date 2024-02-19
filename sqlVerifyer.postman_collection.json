@@ -1073,6 +1073,41 @@
 					"response": []
 				},
 				{
+					"name": "Creation with CSV data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 201\", function () {\r",
+									"    pm.response.to.have.status(201);\r",
+									"});\r",
+									"\r",
+									"pm.collectionVariables.set(\"smokeText\", pm.response.json().text);\r",
+									"\r",
+									"pm.collectionVariables.set(\"taskId\", pm.response.json().id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"text\": \"{{csvTextData}}\",\r\n  \"answer\": \"{{csvAnswerData}}\",\r\n  \"title\": \"{{csvTitleData}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/tasks"
+					},
+					"response": []
+				},
+				{
 					"name": "Verify smoke test",
 					"event": [
 						{
@@ -1281,6 +1316,76 @@
 						"body": {
 							"mode": "raw",
 							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/tasks/{{taskId}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Full Editing with CSV data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.collectionVariables.set(\"smokeText\", pm.response.json().text);\r",
+									"\r",
+									"pm.collectionVariables.set(\"taskId\", pm.response.json().id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"{{taskId}}\",\r\n  \"text\": \"{{csvTextData}}\",\r\n  \"answer\": \"{{csvAnswerData}}\",\r\n  \"title\": \"{{csvTitleData}}\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{baseUrl}}/api/tasks/{{taskId}}"
+					},
+					"response": []
+				},
+				{
+					"name": "Editing with CSV data",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"\r",
+									"pm.collectionVariables.set(\"smokeText\", pm.response.json().text);\r",
+									"\r",
+									"pm.collectionVariables.set(\"taskId\", pm.response.json().id);"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": \"{{taskId}}\",\r\n  \"text\": \"{{csvTextData}}\",\r\n  \"answer\": \"{{csvAnswerData}}\",\r\n  \"title\": \"{{csvTitleData}}\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1580,6 +1685,18 @@
 		{
 			"key": "smokeText",
 			"value": "smokeText"
+		},
+		{
+			"key": "csvTextData",
+			"value": "csvTextData"
+		},
+		{
+			"key": "csvAnswerData",
+			"value": "csvAnswerData"
+		},
+		{
+			"key": "csvTitleData",
+			"value": "csvTitleData"
 		}
 	]
 }
